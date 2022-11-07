@@ -1,4 +1,8 @@
 # Lanches na Web
+<p align="center">
+  <img src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
+  <a href="https://github.com/ViniciusHenriqueWebDev/Lanchonete-na-Web/stargazers"><img alt="GitHub stars"    src="https://img.shields.io/github/stars/ViniciusHenriqueWebDev/Lanchonete-na-Web"></a>
+</p>
 
 <p> O projeto Lanches na Web é um projeto criado por mim no curso <strong>Curso de ASP .NET Core MVC - Criando um Site do Zero (NET 6)</strong>
 com o Professor Marcoratti.</p>
@@ -20,6 +24,6 @@ com o Professor Marcoratti.</p>
 </ol>
 
 # Autor do Projeto
-
-
+https://www.linkedin.com/in/vinicius-henrique-5b80131b7/
+https://github.com/ViniciusHenriqueWebDev/
 
