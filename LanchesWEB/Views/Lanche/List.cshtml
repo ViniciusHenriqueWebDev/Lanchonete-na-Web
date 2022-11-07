@@ -1,0 +1,24 @@
+﻿@model IEnumerable<LanchesWEB.Models.Lanche>
+
+
+<div>
+    <h2>@ViewData["Titulo"]</h2>
+</div>
+<h2>@ViewData["Data"]</h2>
+
+
+<div class="container">
+    <div class="row"> 
+        @foreach (var lanche in Model)
+        {
+            <div class="col-sm-4 col-md-4 col-lg-4">
+                <img src="@lanche.ImageUrl" class="card-img-top img-fluid" alt="@lanche.Nome">
+                <div class="card-body">
+                    <h5 class="card-title">@lanche.Nome</h5>
+                    <p class="card-text">@lanche.DescricaoCurta</p>
+                    <a href="#" class="btn btn-primary">Preço: @lanche.Preco.ToString("c")</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>
