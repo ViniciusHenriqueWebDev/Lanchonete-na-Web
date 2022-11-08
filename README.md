@@ -13,10 +13,11 @@ com o Professor Marcoratti.</p>
 <p>Listagem de Lanches Disponíveis</p>
 <p>Área do cliente com pedidos, carrinho de compras e status do pedido e carrinho de compras</p>
 <p>Área do Restaurante com lista de pedidos, clientes que pediram, dashboard com dados importantes como faturamento e quantidade de pedidos</p>
-![carrinho-compra](https://user-images.githubusercontent.com/78311569/200567496-2714fb53-98e2-402a-aa5a-170a6ff779c6.PNG)
-<br>
+
+
 ![lanches-web-2](https://user-images.githubusercontent.com/78311569/200304847-abe1ce07-b763-49b0-bcb7-06cbac325430.PNG)
 
+![carrinho-compra](https://user-images.githubusercontent.com/78311569/200567496-2714fb53-98e2-402a-aa5a-170a6ff779c6.PNG)
 
 
 # Requerimentos
