@@ -1,0 +1,10 @@
+﻿@model Lanche
+
+<div class="col-sm-4 col-md-4 col-lg-4">
+    <img src="@Model.ImageUrl" class="card-img-top img-fluid" alt="@Model.Nome">
+    <div class="card-body">
+        <h5 class="card-title">@Model.Nome</h5>
+        <p class="card-text">@Model.DescricaoCurta</p>
+        <a href="#" class="btn btn-primary">Preço: @Model.Preco.ToString("c")</a>
+    </div>
+</div>
