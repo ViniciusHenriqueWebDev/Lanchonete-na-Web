@@ -32,7 +32,7 @@ namespace LanchesWEB.Models
         
         [Display(Name = "Caminho Imagem Normal")]
         [StringLength(200, ErrorMessage = "O {0} deve ter no máximo {1} caracteres")]
-        public string ImageUrl { get; set; }
+        public string ImagemUrl { get; set; }
         
         [Display(Name = "Caminho Imagem Miniatura")]
         [StringLength(200, ErrorMessage = "O {0} deve ter no máximo {1} caracteres")]

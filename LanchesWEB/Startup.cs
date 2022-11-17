@@ -2,6 +2,7 @@
 using LanchesWEB.Models;
 using LanchesWEB.Repositories;
 using LanchesWEB.Repositories.Interface;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
 namespace LanchesWEB;
@@ -18,12 +19,26 @@ public class Startup
     {
         services.AddDbContext<AppDbContext>(options =>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+        
+        services.AddIdentity<IdentityUser, IdentityRole>()
+            .AddEntityFrameworkStores<AppDbContext>()
+            .AddDefaultTokenProviders();
+
+        //services.Configure<IdentityOptions>(options =>
+        //{
+        //    options.Password.RequireDigit = true;
+        //    options.Password.RequireLowercase = true;
+        //    options.Password.RequireNonAlphanumeric = true;
+        //    options.Password.RequireUppercase = true;
+        //    options.Password.RequiredLength = 6;
+        //    options.Password.RequiredUniqueChars = 1; 
+        //}); 
 
         services.AddTransient<ILancheRepository, LancheRepository>();
         services.AddTransient<ICategoriaRepository, CategoriaRepository>();
         services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         services.AddScoped(sp => CarrinhoCompra.GetCarrinho(sp));
-
+        services.AddTransient<IPedidoRepository, PedidoRepository>();
         services.AddControllersWithViews();
 
         services.AddMemoryCache();
@@ -49,6 +64,7 @@ public class Startup
 
         app.UseSession();
 
+        app.UseAuthentication();
         app.UseAuthorization();
 
         app.UseEndpoints(endpoints =>
